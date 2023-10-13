@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    #judul {
+      background-image: url(img/2.png);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 80px 0;
+    }
+    .takoyaki {
+      display: flow-root;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f8e5d8;
+    }
+    .takoyaki p {
+      margin: 15px;
+      text-align: justify;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: 15px;
+      width: 70%;
+      padding-left: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .stepbystep {
+      padding: 15px;
+      border-radius: 5px;
+      margin-right: 40px;
+      margin-left: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .stepbystep p {
+      font-weight: bold;
+    }
+    .stepbystep ol {
+      list-style-type: decimal;
+      margin-left: 20px;
+    }
+    .stepbystep li {
+      margin: 10px 0;
+      line-height: 1.4;
+    }
+    .video-container {
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-top: 10px ;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .video-container h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 40px;
+      color: #c70808;
+    }
+    .video-container h2 {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #141414;
+    }
+    .video-container iframe {
+      width: 40%;
+      height: 350px;
+    }
+    .video-container a {
+    text-decoration: inherit; 
+    padding: 10px 20px;
+    background-color: white; 
+    color: #c70808; 
+    transition: background-color 0.3s; 
+    display: inline-block;
+    margin-top: 50px;
+    border-style: solid;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .video p {
+      margin-left: 10px;
+    }
+    .request form {
+      margin-top: 20px;
+      margin-left: 15px;
+      width: 100%;
+    }
+    .background {
+      max-width: 830px;
+      position: relative;
+      margin: auto;
+      margin-top: 25px;
+    }
+    .image {
+      display: none;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      display: inline-block;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      display: inline-block;
+    }
+    blockquote {
+      display: flow-root;
+      flex-wrap: wrap;
+      margin: 20px;
+      padding: 5px;
+      background-color: #d88825;
+      border-left: 5px solid #c70808;
+      color: white;
+      padding-left: 10px;
+    }
+    span {
+      font-size: 15px;
+      color: black;
+      padding-left: 10px;
+    }
+    .table {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: rgba(185, 7, 7, 0.116);
+      text-align: center;
+    }
+    .table-content {
+      opacity: 1;
+      position: relative;
+    }
+    .table-content img {
+      position: absolute;
+      top: 150px;
+      right: 10px;
+    }
+    .jepun h1 {
+      font-size: 100px;
+      font-family: Yu Mincho (body asian), sans-serif;
+      text-align: center;
+      animation: changeColor 5s linear infinite alternate;
+      padding-top: 20px;
+      margin: 0;
+    }
+    .request {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin-bottom: 40px;
+    margin-left: 370px;
+    }
+    form label {
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    form input[type="text"] {
+      width: 91%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    form select, form input[type="submit"] {
+      width: 94%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #d88825;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form select {
+      padding: 5px;
+    }
+    form input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .formulir h1 {
+      flex: 1;
+      font-size: 150px;
+      margin-left: 300px;
+      margin-top: 20px;
+    }
+     footer {
+      background-color: #3A0814; 
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px; 
+    }
+    footer span {
+      color: white;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JaneRima</title>
+  </head>
+  <body>
+    <div id="judul"></div>
+    <div class="background">
+    <div class="image"></div>
+      <img src="img/takoyaki.jpg" alt="">
+    </div>
+  </div>
+    <blockquote>
+      <p>
+        <b
+          ><i>
+            "Buat takoyaki ala rumahan gak kalah enak sama yang di Jepang
+            loh!!!"</i
+          ></b
+        ><br />
+        <span>By : Suditi Jane Rima</span>
+      </p>
+    </blockquote>
+    <div class="takoyaki">
+      <p>
+        Takoyaki (bahasa Jepang: たこ焼き) adalah makanan asal daerah Kansai di
+        Jepang. Satu teori mengatakan bahwa ada pedagang kaki lima
+        bernamaTomokichi Endo menemukan hidangan gurita ini pada 1935. Namun,
+        penemuan takoyaki merupakan adaptasi dari makanan yang sudah ada
+        sebelumnya. Aizuya merupakan toko tempat takoyaki pertama kali
+        ditemukan. Etalase mereka memiliki papan nama berwarna merah besar yang
+        dihiasi dengan kartun gurita. Tomekichi Endo merupakan pendiri toko
+        tersebut dilansir dari <b>Matcha-jp</b>. berbentuk bola-bola kecil
+        dengan diameter 3–5 cm yang dibuat dari adonan tepung terigu diisi
+        potongan gurita di dalamnya.Cara membuat tokayaki ini sangat mudah. Nah,
+        untuk itu kali ini aku akan membagi resep dan cara membuat takoyaki yang
+        enak, mudah, sederhana yang bisa dibuat sendiri di rumah. Pertama-tama
+        kamu harus menyiapkan bahan terlebih dahulu.
+      </p>
+    </div>
+    <div class="table">
+      <div class="table-content">
+        <center>
+          <h1>Bahan-bahan yang harus disiapkan:</h1>
+          <br />
+          <table>
+            <tr>
+              <th>Bahan</th>
+              <th>Equipment</th>
+            </tr>
+            <tr>
+              <td>100 gr tepung terigu</td>
+              <td>Takoyaki pan</td>
+            </tr>
+            <tr>
+              <td>340 ml air/susu cair</td>
+              <td>Sumpit / tusuk satai</td>
+            </tr>
+            <tr>
+              <td>1 sdt kaldu bubuk</td>
+            </tr>
+            <tr>
+              <td>1 sdt kecap ikan</td>
+            </tr>
+            <tr>
+              <td>1 sdt bawang putih halus</td>
+            </tr>
+            <tr>
+              <td>1 butir telur</td>
+            </tr>
+            <tr>
+              <td>1 daun bawang</td>
+            </tr>
+            <tr>
+              <td>Isian sesuai selera ; seafood (recommended)</td>
+            </tr>
+            <tr>
+              <td>Katsuobushi / nori seaweed</td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </div>
+    <div class="jepun">
+      <h1>~たこ焼き~</h1>
+    </div>
+    <div class="stepbystep">
+      <p>Cara memasak:</p>
+      <ol>
+        <li>Blender semua bahan</li>
+        <li>
+          Panaskan cetakan kue cubit dengan api sedang, tidak terlalu kecil dan
+          tidak terlalu besar. Kemudian tuangkan adonan ke cetakan kue cubit,
+          beri irisan. Setelah setengah matang, balik adonan tadi agar berbentuk
+          bulat;
+        </li>
+        <li>Biarkan hingga berubah warna menjadi kecokelatan;</li>
+      </ol>
+    </div>
+    <div class="video-container">
+      <h1>JANEYAKI<br>じゃれ焼き</h1>
+      <h2>Mau Tahu Lebih Banyak Lagi Tentang Cara Membuat Takoyaki!!</h2>
+      <iframe
+        src="https://www.youtube.com/embed/eK6YSiQaz4w?si=edwFPpf00ITX2Oa3"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+  
+      <iframe
+        src="https://www.youtube.com/embed/vlDbPSqfKNs?si=5l16QJyp0PB41gVh"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <br>
+        <a href="https://www.youtube.com/embed/eK6YSiQaz4w?si=edwFPpf00ITX2Oa3"
+          >Lihat Selengkapnya</a>
+    </div>
+    </div>
+    <div class="request">
+      <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+  
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+  
+        <label for="rtutor">Masukan Tutorial Masak Selanjutnya:</label><br>
+        <input type="text" id="rtutor" name="rtutor"><br>
+  
+        <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+        <select name="jenis_kelamin">
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+          <option value="Non-Biner">Non-Biner</option>
+        </select><br>
+  
+        <label for="hobi">Hobi:</label><br>
+        <input type="checkbox" name="hobi" value="Membaca"> Memasak
+        <input type="checkbox" name="hobi" value="Menulis"> Membuat Kue
+        <input type="checkbox" name="hobi" value="Bermain Game"> Membuat Resep Sendiri<br>
+  
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  <footer>
+    &copy; 2023 Suditi Jane Rima. All Rights Reserved. <br/>Powered By
+    <a href="#">JaneRim</a>
+    <span>|</span>
+    <a href="#">Kebijakan Pribadi</a>
+    <span>|</span>
+    <a href="#">Pertanyaan</a>
+    <span>|</span>
+    <a href="#">Profil</a>
+  </footer>
+  </body>
+</html>
